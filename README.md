@@ -1,7 +1,7 @@
-# OpenAI Creative Engine
+# OpenAI Cutting Edge Engine
 ## Built by Cherry Barton | AI Solutions Engineer
 
-Advanced AI applications with OpenAI: Vision, DALL-E, and GPT-4.
+The absolute latest from OpenAI: GPT-5.6, o1 reasoning, Realtime API, and GPT-Image-2.
 
 **Live:** https://openai-showcase.lazermermicorn.com
 
@@ -9,34 +9,38 @@ Advanced AI applications with OpenAI: Vision, DALL-E, and GPT-4.
 
 ## What This Demonstrates
 
-### GPT-4 Turbo
-- Complex reasoning
-- Tool use
-- Structured output
+### GPT-5.6 Luna (Latest)
+- Fastest GPT model ever
+- 1M+ context window
+- Native multimodal (text, image, audio, video)
+- Tool calling with human approval
 
-### DALL-E 3
-- Image generation
-- Style transfer
+### o1 Reasoning Models
+- Chain-of-thought reasoning
+- Mathematical proofs
+- Complex debugging
+- Scientific analysis
+
+### Realtime API
+- Voice-to-voice conversations
+- Sub-500ms latency
+- WebRTC support
+- Function calling in voice
+
+### GPT-Image-2 (Latest)
+- Native image generation
+- Style control
 - Brand consistency
-
-### Vision
-- Image analysis
-- OCR
-- Scene understanding
-
-### Embeddings
-- Semantic search
-- RAG pipelines
-- Vector databases
+- Edit existing images
 
 ---
 
 ## Tech Stack
 
-- **Framework:** Next.js 14
-- **AI:** OpenAI SDK
-- **Database:** Supabase + pgvector
-- **Deployment:** Vercel
+- **Framework:** Next.js 15 (App Router)
+- **AI:** OpenAI SDK (latest)
+- **Realtime:** WebRTC + WebSocket
+- **Deployment:** Vercel Edge
 
 ---
 
@@ -58,64 +62,31 @@ npm run dev
 
 ## Features
 
-### 1. AI Chat
-Advanced chat with tool use and structured output.
+### 1. GPT-5.6 Chat
+Ultra-fast chat with GPT-5.6 Luna.
 
-### 2. Image Generation
-DALL-E 3 image generation with style controls.
+### 2. o1 Reasoning
+Complex problem solving with chain-of-thought.
 
-### 3. Vision Analysis
-Image analysis with detailed descriptions.
+### 3. Realtime Voice
+Voice-to-voice conversations with AI.
 
-### 4. Semantic Search
-Vector-based search with embeddings.
+### 4. Image Generation
+GPT-Image-2 for native image creation.
 
-### 5. Content Generation
-Blog posts, emails, and marketing copy.
+### 5. Multi-modal Input
+Text, images, audio, and video in one request.
 
 ---
 
-## OpenAI Integration
+## Model Comparison (2026)
 
-```typescript
-// Chat with Tools
-const completion = await openai.chat.completions.create({
-  model: 'gpt-4-turbo-preview',
-  messages: [{ role: 'user', content: 'What is the weather?' }],
-  tools: [{
-    type: 'function',
-    function: {
-      name: 'get_weather',
-      description: 'Get weather for a location',
-      parameters: {
-        type: 'object',
-        properties: {
-          location: { type: 'string' },
-        },
-      },
-    },
-  }],
-});
-
-// Image Generation
-const image = await openai.images.generate({
-  model: 'dall-e-3',
-  prompt: 'A futuristic cityscape at sunset',
-  size: '1024x1024',
-});
-
-// Vision Analysis
-const analysis = await openai.chat.completions.create({
-  model: 'gpt-4-vision-preview',
-  messages: [{
-    role: 'user',
-    content: [
-      { type: 'text', text: 'Describe this image' },
-      { type: 'image_url', image_url: { url: 'https://example.com/image.jpg' } },
-    ],
-  }],
-});
-```
+| Model | Speed | Context | Best For |
+|-------|-------|---------|----------|
+| GPT-5.6 Luna | 150 tok/s | 1M | General, fast |
+| GPT-5.6 Sol | 50 tok/s | 128K | Balanced |
+| o1 | 10 tok/s | 200K | Hard reasoning |
+| o3-mini | 45 tok/s | 200K | Fast reasoning |
 
 ---
 
@@ -123,10 +94,10 @@ const analysis = await openai.chat.completions.create({
 
 I use OpenAI across my platforms for AI capabilities. This repo showcases:
 
-- **GPT-4** for complex reasoning
-- **DALL-E** for image generation
-- **Vision** for image analysis
-- **Embeddings** for semantic search
+- **GPT-5.6** for fastest inference
+- **o1** for hard reasoning
+- **Realtime** for voice applications
+- **GPT-Image-2** for image generation
 
 ---
 
@@ -134,4 +105,4 @@ I use OpenAI across my platforms for AI capabilities. This repo showcases:
 
 **Cherry Barton** — cherry@lazermermicorn.com
 
-*AI Solutions Engineer | 9 Production Platforms | OpenAI Integration Expert*
+*AI Solutions Engineer | 9 Production Platforms | OpenAI Cutting Edge Expert*
