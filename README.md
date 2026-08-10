@@ -1,5 +1,5 @@
 # OpenAI Cutting Edge Engine
-## Built by Cherry Barton | AI Solutions Engineer
+## Built by Cherry Shanaley (Chan) | AI Solutions Engineer
 
 The absolute latest from OpenAI: GPT-5.6, o1 reasoning, Realtime API, and GPT-Image-2.
 
@@ -103,6 +103,6 @@ I use OpenAI across my platforms for AI capabilities. This repo showcases:
 
 ## Contact
 
-**Cherry Barton** — cherry@lazermermicorn.com
+**Cherry Shanaley (Chan)** — cyber.lazer.mermicorn@gmail.com
 
 *AI Solutions Engineer | 9 Production Platforms | OpenAI Cutting Edge Expert*
