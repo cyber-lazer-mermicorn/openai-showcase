@@ -43,7 +43,11 @@ export async function generateImage(prompt: string, size?: '1024x1024' | '512x51
       prompt,
       size: size || '1024x1024',
     });
-    return response.data[0].url;
+    const imageUrl = response.data?.[0]?.url;
+    if (!imageUrl) {
+      throw new Error('Image generation returned no image URL.');
+    }
+    return imageUrl;
   } catch (error: any) {
     throw new Error(`Image generation error: ${error?.status || 500} - ${error?.message || 'Unknown error'}`);
   }
